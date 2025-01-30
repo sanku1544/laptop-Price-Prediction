@@ -1,0 +1,698 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block content %}
+<link href="//fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<!-- Template CSS Style link -->
+<link rel="stylesheet" href="{%static 'css/style-starter.css'%}">
+
+<!-- Hero Section
+<section id="hero" class="hero-section">
+    <div class="hero-overlay">
+        <div class="hero-content">
+        </div>
+    </div>
+</section> -->
+<style>
+ 
+
+    .animated-button {
+        background: linear-gradient(45deg, #3498db, #8e44ad);
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .animated-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 200%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        transform: skewX(-45deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .animated-button:hover::before {
+        left: 100%;
+    }
+
+    .animated-button:hover {
+        background: linear-gradient(45deg, #8e44ad, #3498db);
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .animated-button:active {
+        transform: scale(0.95);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .neon-button {
+        position: relative;
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        background: #111;
+        border: 2px solid #3498db;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        box-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 40px #3498db;
+    }
+
+    .neon-button::before {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        background: linear-gradient(0deg, transparent, rgba(52, 152, 219, 0.4), transparent);
+        transform: skewY(45deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .neon-button:hover::before {
+        top: 100%;
+    }
+
+    .neon-button:hover {
+        color: #3498db;
+        background: #222;
+        box-shadow: 0 0 20px #3498db, 0 0 30px #3498db, 0 0 50px #3498db;
+        transform: scale(1.03);
+    }
+
+    .neon-button:active {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px #3498db, 0 0 15px #3498db, 0 0 30px #3498db;
+    }
+     /* CSS */
+     .button-64 {
+          align-items: center;
+          background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+          border: 0;
+          border-radius: 8px;
+          box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+          box-sizing: border-box;
+          color: #FFFFFF;
+          display: flex;
+          font-family: Phantomsans, sans-serif;
+          font-size: 20px;
+          justify-content: center;
+          line-height: 1em;
+          max-width: 100%;
+          min-width: 140px;
+          padding: 3px;
+          text-decoration: none;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          white-space: nowrap;
+          cursor: pointer;
+        }
+        
+        .button-64:active,
+        .button-64:hover {
+          outline: 0;
+        }
+        
+        .button-64 span {
+          background-color: rgb(5, 6, 45);
+          padding: 16px 24px;
+          border-radius: 6px;
+          width: 100%;
+          height: 100%;
+          transition: 300ms;
+        }
+        
+        .button-64:hover span {
+          background: none;
+        }
+        
+        @media (min-width: 768px) {
+          .button-64 {
+            font-size: 24px;
+            min-width: 196px;
+          }
+        }
+    
+</style>
+
+
+  <!-- banner section -->
+  <div class="slideshow">
+    <div class="holder">
+        
+        <div class="slide slide-1">
+            <span class="container">
+                <span class="banner-content">
+                    <h3 class="mb-2 skmain">Predict Your Laptop's Price Instantly</h3>
+                    <p class="skmain">{% if request.session.uid %}Hello, {{ request.session.uname }}!{% else %}Sign in to unlock personalized features.{% endif %}</p><br>
+                    <a  href="{% url 'about' %}"><button class="button-64" role="button"><span class="text">Explore More</span></button> </a>
+                </span>
+            </span>
+        </div><!-- HTML !-->
+        
+        
+       
+        <div class="slide slide-2">
+            <span class="container">
+                <span class="banner-content">
+                    <h3 class="mb-2 skmain">Find the Best Laptop Within Your Budget</h3>
+                    <p class="skmain">{% if request.session.uid %}Hello, {{ request.session.email }}!{% else %}Sign in to unlock personalized features.{% endif %}</p><br>
+                    <a class="" href="{% url 'about' %}"><button class="button-64" role="button"><span class="text">Explore More</span></button></a>
+                </span>
+            </span>
+        </div>
+        <div class="slide slide-3">
+            <span class="container">
+                <span class="banner-content">
+                    <h3 class="skmain">Smart Pricing with AI Technology</h3>
+                    <p class="skmain">{% if request.session.uid %}Hello, Thanks For Login!{% else %}Sign in to unlock personalized features.{% endif %}</p><br>
+                    <a class="" href="{% url 'about' %}"><button class="button-64" role="button"><span class="text">Explore More</span></button></a>
+                </span>
+            </span>
+        </div>
+        <div class="slide slide-4">
+            <span class="container">
+                <span class="banner-content">
+                    <h3 class="skmain">Get the Best Laptop Deals with Data Insights</h3>
+                    <p class="skmain">{% if request.session.uid %}Hello, {{ request.session.uname }}!{% else %}Sign in to unlock personalized features.{% endif %}</p><br>
+                    <a class="" href="{% url 'about' %}"><button class="button-64" role="button"><span class="text">Explore More</span></button></a>
+                </span>
+            </span>
+        </div>
+    </div>
+    <div class="steps"></div>
+    <a href="#" class="prev"><i class="fas fa-arrow-left"></i></a>
+    <a href="#" class="next"><i class="fas fa-arrow-right"></i></a>
+</div>
+<!-- //banner section -->
+
+
+    <!-- about section -->
+<section class="w3l-aboutblock py-lg-5 py-4" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="{% static 'image/banner5.jpg' %}" alt="" class="img-fluid radius-image">
+            </div>
+            <div class="col-lg-6 ps-xl-5 ps-lg-4 mt-lg-0 mt-5">
+                <div class="title-main">
+                    <p>About Us</p>
+                    <h3 class="title-style">Predict Your Laptop Price</h3>
+                </div>
+                <p class="mt-3">Use our advanced tools to predict laptop prices based on configurations like CPU, memory, RAM, and other specifications. Get accurate insights to make informed decisions.</p>
+                <ul class="mt-4 list-style-lis">
+
+                    <li class="mt-2"><i class="fas fa-check-circle"></i> 
+                        <a href="{% url 'predictor:allinone' %}"><button class="neon-button">Predict Price Using Historical Data</button></a>
+                    </li>
+                    <li class="mt-2"><i class="fas fa-check-circle"></i> 
+                        <a href="{% url 'ppredict' %}" ><button class="neon-button">Predict Price Using New Data (Set 2)</button></a>
+                    </li>
+                    <li class="mt-2"><i class="fas fa-check-circle"></i> 
+                        <a href="{% url 'predict2' %}" ><button class="neon-button">Predict Price Using New Data (Set 3)</button></a>
+                    </li>
+                </ul>
+                <!-- <a href="{% url 'contact' %}" class="btn btn-style mt-5">Contact Us</a> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //about section -->
+
+
+<!-- Features Section -->
+<!-- <section id="features" class="features-section">
+    <h2>Our Features</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="icon">&#9881;</i>
+            <h3>Advanced Algorithms</h3>
+            <p>Harnessing AI to deliver unparalleled accuracy in predictions.</p>
+            <a href="{% url 'predictor:allinone' %}" class="btn btn-primary">Predict Price on Old Data</a>
+        </div>
+        <div class="feature-card">
+            <i class="icon">&#128200;</i>
+            <h3>Custom Comparisons</h3>
+            <p>Compare laptops tailored to your preferences and budget.</p>
+            <a href="{% url 'ppredict' %}" class="btn btn-primary">Predict Price on New 2 Data</a>
+        </div>
+        <div class="feature-card">
+            <i class="icon">&#128214;</i>
+            <h3>Expert Recommendations</h3>
+            <p>Get curated insights from tech professionals to guide your choices.</p>
+            <a href="{% url 'predict2' %}" class="btn btn-primary">Predict Price on New 3 Data</a>
+        </div>
+    </div>
+</section> -->
+
+
+<!-- tours slider section -->
+<section class="w3l-index5 pb-5 pt-4">
+    <div class="container-fluid py-lg-5 py-md-4 py-2">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:600px;">
+            <p>Featured</p>
+            <h3 class="title-style">Most Popular Laptops</h3>
+        </div>
+        <div class="inner-sec-w3layouts pb-4">
+            <div class="owl-three owl-carousel owl-theme">
+                <div class="item">
+                    <div class="content-left-sec">
+                        <a class="blog-link d-block zoom-image" href="https://www.amazon.in/ASUS-Vivobook-Laptop-Windows-E1504FA-NJ542WS/dp/B0BTWF2BQX?th=1"><img src="{%static 'image/s1.jpg'%}"
+                                class="img-fluid scale-image" alt=""></a>
+                        <div class="blog-info">
+                            <ul class="rating-list mb-2">
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                                <li class="ms-1">4.07</li>
+                            </ul>
+                            <a href="https://www.amazon.in/ASUS-Vivobook-Laptop-Windows-E1504FA-NJ542WS/dp/B0BTWF2BQX?th=1" class="to-title">ASUS Vivobook Go 15</a>
+                            <p class="mt-1"><i class="fas fa-map-marker-alt me-1"></i>Amazon</p>
+                            <div class="to-price mt-2">
+                                <label>From</label> <span>Rs 41,999</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <p><i class="far fa-clock me-1"></i>10 Days</p>
+                                <a href="https://www.amazon.in/ASUS-Vivobook-Laptop-Windows-E1504FA-NJ542WS/dp/B0BTWF2BQX?th=1" class="btn btn-style btn-style-primary">Explore<i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content-left-sec">
+                        <a class="blog-link d-block zoom-image" href="https://www.amazon.in/ASUS-TUF-Gaming-15-6-FA507NVR-LP104WS/dp/B0DDTNZ2LR?crid=ASTI9T09YPK5&dib=eyJ2IjoiMSJ9.lyNpzQjjberyujsCKOQhS1QTH5NDjMW6UPi-UU4VtJdVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvq3vjvXHfGwDuk-cq5z3apaRQL47WbZ8WlarbHbzXQfGPnDNNro8fs9jArGsrPTss_pYjO3OLgqmwTGXON5QMDASuB3HfT6CiP11qpjNsukxghWylLm8llDS9gRxxUuCCF3pCCfh0LEOsLVpRxv_fRM.MxLLrKYjgDX_EDn_VzyNcZcQqoBwi8etBOTaeMFNxnY&dib_tag=se&keywords=laptops+under+100000&qid=1736312123&sprefix=laptops+under+100000%2Caps%2C235&sr=8-4"><img src="{%static 'image/s2.jpg'%}"
+                                class="img-fluid scale-image" alt=""></a>
+                        <div class="blog-info">
+                            <ul class="rating-list mb-2">
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                                <li class="ms-1">4.05</li>
+                            </ul>
+                            <a href="https://www.amazon.in/ASUS-TUF-Gaming-15-6-FA507NVR-LP104WS/dp/B0DDTNZ2LR?crid=ASTI9T09YPK5&dib=eyJ2IjoiMSJ9.lyNpzQjjberyujsCKOQhS1QTH5NDjMW6UPi-UU4VtJdVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvq3vjvXHfGwDuk-cq5z3apaRQL47WbZ8WlarbHbzXQfGPnDNNro8fs9jArGsrPTss_pYjO3OLgqmwTGXON5QMDASuB3HfT6CiP11qpjNsukxghWylLm8llDS9gRxxUuCCF3pCCfh0LEOsLVpRxv_fRM.MxLLrKYjgDX_EDn_VzyNcZcQqoBwi8etBOTaeMFNxnY&dib_tag=se&keywords=laptops+under+100000&qid=1736312123&sprefix=laptops+under+100000%2Caps%2C235&sr=8-4" class="to-title">ASUS TUF Gaming A15</a>
+                            <p class="mt-1"><i class="fas fa-map-marker-alt me-1"></i>Amazon</p>
+                            <div class="to-price mt-2">
+                                <label>From</label> <span>Rs 99,999</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <p><i class="far fa-clock me-1"></i>15 Days</p>
+                                <a href="https://www.amazon.in/ASUS-TUF-Gaming-15-6-FA507NVR-LP104WS/dp/B0DDTNZ2LR?crid=ASTI9T09YPK5&dib=eyJ2IjoiMSJ9.lyNpzQjjberyujsCKOQhS1QTH5NDjMW6UPi-UU4VtJdVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvq3vjvXHfGwDuk-cq5z3apaRQL47WbZ8WlarbHbzXQfGPnDNNro8fs9jArGsrPTss_pYjO3OLgqmwTGXON5QMDASuB3HfT6CiP11qpjNsukxghWylLm8llDS9gRxxUuCCF3pCCfh0LEOsLVpRxv_fRM.MxLLrKYjgDX_EDn_VzyNcZcQqoBwi8etBOTaeMFNxnY&dib_tag=se&keywords=laptops+under+100000&qid=1736312123&sprefix=laptops+under+100000%2Caps%2C235&sr=8-4" class="btn btn-style btn-style-primary">Explore<i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content-left-sec">
+                        <a class="blog-link d-block zoom-image" href="https://www.amazon.in/HP-Victus-Powered-15-6-inch-Backlit/dp/B0D7PXTNRX?crid=ASTI9T09YPK5&dib=eyJ2IjoiMSJ9.lyNpzQjjberyujsCKOQhS1QTH5NDjMW6UPi-UU4VtJdVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvq3vjvXHfGwDuk-cq5z3apaRQL47WbZ8WlarbHbzXQfGPnDNNro8fs9jArGsrPTss_pYjO3OLgqmwTGXON5QMDASuB3HfT6CiP11qpjNsukxghWylLm8llDS9gRxxUuCCF3pCCfh0LEOsLVpRxv_fRM.MxLLrKYjgDX_EDn_VzyNcZcQqoBwi8etBOTaeMFNxnY&dib_tag=se&keywords=laptops+under+100000&qid=1736312123&sprefix=laptops+under+100000%2Caps%2C235&sr=8-5" ><img src="{%static 'image/s3.jpg'%}"
+                                class="img-fluid scale-image" alt=""></a>
+                        <div class="blog-info">
+                            <ul class="rating-list mb-2">
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                                <li class="ms-1">4.07</li>
+                            </ul>
+                            <a href="https://www.amazon.in/HP-Victus-Powered-15-6-inch-Backlit/dp/B0D7PXTNRX?crid=ASTI9T09YPK5&dib=eyJ2IjoiMSJ9.lyNpzQjjberyujsCKOQhS1QTH5NDjMW6UPi-UU4VtJdVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvq3vjvXHfGwDuk-cq5z3apaRQL47WbZ8WlarbHbzXQfGPnDNNro8fs9jArGsrPTss_pYjO3OLgqmwTGXON5QMDASuB3HfT6CiP11qpjNsukxghWylLm8llDS9gRxxUuCCF3pCCfh0LEOsLVpRxv_fRM.MxLLrKYjgDX_EDn_VzyNcZcQqoBwi8etBOTaeMFNxnY&dib_tag=se&keywords=laptops+under+100000&qid=1736312123&sprefix=laptops+under+100000%2Caps%2C235&sr=8-5"  class="to-title">HP Victus Gaming Laptop</a>
+                            <p class="mt-1"><i class="fas fa-map-marker-alt me-1"></i>Amazon</p>
+                            <div class="to-price mt-2">
+                                <label>From</label> <span>Rs 98,990</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <p><i class="far fa-clock me-1"></i>6 Days</p>
+                                <a href="https://www.amazon.in/HP-Victus-Powered-15-6-inch-Backlit/dp/B0D7PXTNRX?crid=ASTI9T09YPK5&dib=eyJ2IjoiMSJ9.lyNpzQjjberyujsCKOQhS1QTH5NDjMW6UPi-UU4VtJdVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvq3vjvXHfGwDuk-cq5z3apaRQL47WbZ8WlarbHbzXQfGPnDNNro8fs9jArGsrPTss_pYjO3OLgqmwTGXON5QMDASuB3HfT6CiP11qpjNsukxghWylLm8llDS9gRxxUuCCF3pCCfh0LEOsLVpRxv_fRM.MxLLrKYjgDX_EDn_VzyNcZcQqoBwi8etBOTaeMFNxnY&dib_tag=se&keywords=laptops+under+100000&qid=1736312123&sprefix=laptops+under+100000%2Caps%2C235&sr=8-5" class="btn btn-style btn-style-primary">Explore<i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content-left-sec">
+                        <a class="blog-link d-block zoom-image" href="https://www.amazon.in/ASUS-Vivobook-OLED-2-8K-2880/dp/B09L5K7DM5?crid=ASTI9T09YPK5&dib=eyJ2IjoiMSJ9.lyNpzQjjberyujsCKOQhS1QTH5NDjMW6UPi-UU4VtJdVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvq3vjvXHfGwDuk-cq5z3apaRQL47WbZ8WlarbHbzXQfGPnDNNro8fs9jArGsrPTss7nXczCPG-lOuBkSp83lhD7Fio0S9bKAvfZxKHmWo_UxhWAixR1pEtmFztBpldzZ_W8vy-MsxQqrAFjo-FUWkfw._ZzRh2s2BVmI0jumvkIKGc1ITTy8E2QiqZPBxCKpj9w&dib_tag=se&keywords=laptops+under+100000&qid=1736312696&sprefix=laptops+under+100000%2Caps%2C235&sr=8-8"><img src="{%static 'image/s4.jpg'%}"
+                                class="img-fluid scale-image" alt=""></a>
+                        <div class="blog-info">
+                            <ul class="rating-list mb-2">
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                                <li class="ms-1">4.08</li>
+                            </ul>
+                            <a href="https://www.amazon.in/ASUS-Vivobook-OLED-2-8K-2880/dp/B09L5K7DM5?crid=ASTI9T09YPK5&dib=eyJ2IjoiMSJ9.lyNpzQjjberyujsCKOQhS1QTH5NDjMW6UPi-UU4VtJdVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvq3vjvXHfGwDuk-cq5z3apaRQL47WbZ8WlarbHbzXQfGPnDNNro8fs9jArGsrPTss7nXczCPG-lOuBkSp83lhD7Fio0S9bKAvfZxKHmWo_UxhWAixR1pEtmFztBpldzZ_W8vy-MsxQqrAFjo-FUWkfw._ZzRh2s2BVmI0jumvkIKGc1ITTy8E2QiqZPBxCKpj9w&dib_tag=se&keywords=laptops+under+100000&qid=1736312696&sprefix=laptops+under+100000%2Caps%2C235&sr=8-8" class="to-title">ASUS Vivobook S 15 OLED</a>
+                            <p class="mt-1"><i class="fas fa-map-marker-alt me-1"></i>Amazon</p>
+                            <div class="to-price mt-2">
+                                <label>From</label> <span>Rs 92,980</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <p><i class="far fa-clock me-1"></i>7 Days</p>
+                                <a href="https://www.amazon.in/ASUS-Vivobook-OLED-2-8K-2880/dp/B09L5K7DM5?crid=ASTI9T09YPK5&dib=eyJ2IjoiMSJ9.lyNpzQjjberyujsCKOQhS1QTH5NDjMW6UPi-UU4VtJdVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvq3vjvXHfGwDuk-cq5z3apaRQL47WbZ8WlarbHbzXQfGPnDNNro8fs9jArGsrPTss7nXczCPG-lOuBkSp83lhD7Fio0S9bKAvfZxKHmWo_UxhWAixR1pEtmFztBpldzZ_W8vy-MsxQqrAFjo-FUWkfw._ZzRh2s2BVmI0jumvkIKGc1ITTy8E2QiqZPBxCKpj9w&dib_tag=se&keywords=laptops+under+100000&qid=1736312696&sprefix=laptops+under+100000%2Caps%2C235&sr=8-8" class="btn btn-style btn-style-primary">Explore<i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content-left-sec">
+                        <a class="blog-link d-block zoom-image" href="https://www.amazon.in/HP-I7-13620H-15-6-Inch-Response-Fa1332Tx/dp/B0D2DHNKFB?crid=77UUVU9I2J61&dib=eyJ2IjoiMSJ9.9I0zEaoVf7KIHrJOsub-XUQr3xxZPNR6IXzpDArwrXBVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvnPxyLg3hWDU2E0BVIBIWGlp7tpyhlQ5_9K5Ng7oBo1Tw4vb3CioJc9StAUWaBqsCJIF2W7pMKXCqciEZDnEvq6bKLI6NhICNGgb0lNUSE7tfw97rJV0SiRVLqCFfggwWFurnt0DzDtSw5J62jtpUCs.P5O2eSTFrbdE7vqiDQJfKOwVyYj9Bl8rIyOQTFZzINU&dib_tag=se&keywords=laptops+under+100000&qid=1736330144&sprefix=%2Caps%2C186&sr=8-3"><img src="{%static 'image/s6.jpg'%}"
+                                class="img-fluid scale-image" alt=""></a>
+                        <div class="blog-info">
+                            <ul class="rating-list mb-2">
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                                <li class="ms-1">4.09</li>
+                            </ul>
+                            <a href="https://www.amazon.in/HP-I7-13620H-15-6-Inch-Response-Fa1332Tx/dp/B0D2DHNKFB?crid=77UUVU9I2J61&dib=eyJ2IjoiMSJ9.9I0zEaoVf7KIHrJOsub-XUQr3xxZPNR6IXzpDArwrXBVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvnPxyLg3hWDU2E0BVIBIWGlp7tpyhlQ5_9K5Ng7oBo1Tw4vb3CioJc9StAUWaBqsCJIF2W7pMKXCqciEZDnEvq6bKLI6NhICNGgb0lNUSE7tfw97rJV0SiRVLqCFfggwWFurnt0DzDtSw5J62jtpUCs.P5O2eSTFrbdE7vqiDQJfKOwVyYj9Bl8rIyOQTFZzINU&dib_tag=se&keywords=laptops+under+100000&qid=1736330144&sprefix=%2Caps%2C186&sr=8-3" class="to-title">HP Victus, 13th Gen</a>
+                            <p class="mt-1"><i class="fas fa-map-marker-alt me-1"></i>Amazon
+                            </p>
+                            <div class="to-price mt-2">
+                                <label>From</label> <span>Rs 92,999</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <p><i class="far fa-clock me-1"></i>15 Days</p>
+                                <a href="https://www.amazon.in/HP-I7-13620H-15-6-Inch-Response-Fa1332Tx/dp/B0D2DHNKFB?crid=77UUVU9I2J61&dib=eyJ2IjoiMSJ9.9I0zEaoVf7KIHrJOsub-XUQr3xxZPNR6IXzpDArwrXBVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvnPxyLg3hWDU2E0BVIBIWGlp7tpyhlQ5_9K5Ng7oBo1Tw4vb3CioJc9StAUWaBqsCJIF2W7pMKXCqciEZDnEvq6bKLI6NhICNGgb0lNUSE7tfw97rJV0SiRVLqCFfggwWFurnt0DzDtSw5J62jtpUCs.P5O2eSTFrbdE7vqiDQJfKOwVyYj9Bl8rIyOQTFZzINU&dib_tag=se&keywords=laptops+under+100000&qid=1736330144&sprefix=%2Caps%2C186&sr=8-3" class="btn btn-style btn-style-primary">Explore<i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content-left-sec">
+                        <a class="blog-link d-block zoom-image" href="https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B0CRKXDX83?crid=77UUVU9I2J61&dib=eyJ2IjoiMSJ9.9I0zEaoVf7KIHrJOsub-XUQr3xxZPNR6IXzpDArwrXBVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvnPxyLg3hWDU2E0BVIBIWGlp7tpyhlQ5_9K5Ng7oBo1Tw4vb3CioJc9StAUWaBqsCJIF2W7pMKXCqciEZDnEvq6bKLI6NhICNGgb0lNUSE7tfw97rJV0SiRVLqCFfggwWFurnt0DzDtSw5J62jtpUCs.P5O2eSTFrbdE7vqiDQJfKOwVyYj9Bl8rIyOQTFZzINU&dib_tag=se&keywords=laptops+under+100000&qid=1736330144&sprefix=%2Caps%2C186&sr=8-15"><img src="{%static 'image/s5.jpg'%}"
+                                class="img-fluid scale-image" alt=""></a>
+                        <div class="blog-info">
+                            <ul class="rating-list mb-2">
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                                <li class="ms-1">4.06</li>
+                            </ul>
+                            <a href="https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B0CRKXDX83?crid=77UUVU9I2J61&dib=eyJ2IjoiMSJ9.9I0zEaoVf7KIHrJOsub-XUQr3xxZPNR6IXzpDArwrXBVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvnPxyLg3hWDU2E0BVIBIWGlp7tpyhlQ5_9K5Ng7oBo1Tw4vb3CioJc9StAUWaBqsCJIF2W7pMKXCqciEZDnEvq6bKLI6NhICNGgb0lNUSE7tfw97rJV0SiRVLqCFfggwWFurnt0DzDtSw5J62jtpUCs.P5O2eSTFrbdE7vqiDQJfKOwVyYj9Bl8rIyOQTFZzINU&dib_tag=se&keywords=laptops+under+100000&qid=1736330144&sprefix=%2Caps%2C186&sr=8-15" class="to-title">Dell {Smartchoice} G15-5530</a>
+                            <p class="mt-1"><i class="fas fa-map-marker-alt me-1"></i>Amazon
+                            </p>
+                            <div class="to-price mt-2">
+                                <label>From</label> <span>Rs 75,990</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <p><i class="far fa-clock me-1"></i>12 Days</p>
+                                <a href="https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B0CRKXDX83?crid=77UUVU9I2J61&dib=eyJ2IjoiMSJ9.9I0zEaoVf7KIHrJOsub-XUQr3xxZPNR6IXzpDArwrXBVwiCL5yeGpS-onjx4RPoefg2dD28nY8NC40J3zrIhvnPxyLg3hWDU2E0BVIBIWGlp7tpyhlQ5_9K5Ng7oBo1Tw4vb3CioJc9StAUWaBqsCJIF2W7pMKXCqciEZDnEvq6bKLI6NhICNGgb0lNUSE7tfw97rJV0SiRVLqCFfggwWFurnt0DzDtSw5J62jtpUCs.P5O2eSTFrbdE7vqiDQJfKOwVyYj9Bl8rIyOQTFZzINU&dib_tag=se&keywords=laptops+under+100000&qid=1736330144&sprefix=%2Caps%2C186&sr=8-15" class="btn btn-style btn-style-primary">Explore<i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //tours slider section -->
+
+ <!-- stats section -->
+<section class="w3_stats py-5" id="stats">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="title-main text-center mx-auto mb-5" style="max-width:600px;">
+            <p>Statistics</p>
+            <h3 class="title-style text-white"> Expertise in Laptop Price Prediction</h3>
+        </div>
+        <div class="w3-stats text-center py-lg-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="counter">
+                        <i class="fas fa-laptop"></i>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="timer" data-to="200" data-speed="1500"></div>
+                            <span class="stats-plus">+</span>
+                        </div>
+                        <p class="count-text">Laptops Analyzed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter">
+                        <i class="fas fa-user-check"></i>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="timer" data-to="100" data-speed="1500"></div>
+                            <span class="stats-plus">+</span>
+                        </div>
+                        <p class="count-text">Satisfied Users</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="counter">
+                        <i class="fas fa-award"></i>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="timer" data-to="30" data-speed="1500"></div>
+                            <span class="stats-plus">+</span>
+                        </div>
+                        <p class="count-text">Models Trained</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="counter">
+                        <i class="fas fa-building"></i>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="timer" data-to="130" data-speed="1500"></div>
+                            <span class="stats-plus">+</span>
+                        </div>
+                        <p class="count-text">Partner Brands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //stats section -->
+
+
+<!-- services section -->
+<section class="w3l-grids-block py-5">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:600px;">
+            <p>Our Services</p>
+            <h3 class="title-style">Our Amazing Services </h3>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="bottom-block">
+                    <a href="" class="d-block">
+                        <i class="fas fa-laptop"></i>
+                        <h3 class="my-3">Price Trend Analysis</h3>
+                        <p class="">Analyze historical data to understand pricing trends for laptops over time.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 mt-md-0 mt-4">
+                <div class="bottom-block">
+                    <a href="" class="d-block">
+                        <i class="fas fa-chart-line"></i>
+                        <h3 class="my-3">Price Prediction</h3>
+                        <p class="">Use advanced machine learning algorithms to predict laptop prices.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 mt-lg-0 mt-4">
+                <div class="bottom-block">
+                    <a href="" class="d-block">
+                        <i class="fas fa-tools"></i>
+                        <h3 class="my-3">Customization Tools</h3>
+                        <p class="">Personalize prediction models based on specifications and user preferences.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //services section -->
+
+ 
+
+
+
+
+<!-- Chatbot Section
+<div class="chatbot" id="chatbot">
+    <div class="chatbot-header">
+        <p>Need Assistance? Chat with Us!</p>
+        <button id="close-chatbot" class="close-chatbot-btn">X</button>
+    </div>
+    <div class="chatbot-body" id="chatbot-body"></div>
+    <div class="chatbot-footer">
+        <input type="text" id="user-input" placeholder="Type your query...">
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+
+<div class="chatbot-icon" id="chatbot-icon">&#128172;</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const chatbot = document.getElementById("chatbot");
+        const chatbotIcon = document.getElementById("chatbot-icon");
+        const closeChatbot = document.getElementById("close-chatbot");
+
+        chatbot.style.display = "none";
+
+        chatbotIcon.addEventListener("click", function () {
+            chatbot.style.display = "block";
+            chatbotIcon.style.display = "none";
+        });
+
+        closeChatbot.addEventListener("click", function () {
+            chatbot.style.display = "none";
+            chatbotIcon.style.display = "block";
+        });
+    });
+</script> -->
+
+ <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="{%static 'js/jquery-3.3.1.min.js'%}"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- banner slider -->
+    <script src="{%static 'js/slideshow.js'%}"></script>
+    <!-- //banner slider -->
+
+    <!-- for services carousel slider -->
+    <script src="{%static 'js/owl.carousel.js'%}"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-three').owlCarousel({
+                loop: true,
+                stagePadding: 20,
+                margin: 20,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    991: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //for services carousel slider -->
+
+    <!-- counter-->
+    <script src="{%static 'js/counter.js'%}"></script>
+    <!-- //counter-->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="{%static 'js/theme-change.js'%}"></script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!-- bootstrap -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <!-- //bootstrap -->
+    <!-- //Js scripts -->
+{% endblock %}

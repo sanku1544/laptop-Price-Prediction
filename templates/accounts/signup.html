@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign up to join the Laptop Price Predictor">
+    <title>Sign Up - Laptop Price Predictor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6c63ff, #3a2a8e);
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 900px; /* Reduced maximum width */
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section {
+            flex: 1;
+            padding: 40px; /* Reduced padding */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #f8f9fa;
+        }
+
+        .form-section h1 {
+            font-size: 1.5rem; /* Reduced font size */
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .form-section p {
+            color: #777;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px; /* Reduced input size */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: border 0.3s, background 0.3s;
+
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #6c63ff;
+            background: #fff;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px; /* Reduced button size */
+            background: linear-gradient(135deg, #6c63ff, #3a2a8e);
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 20px;
+
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #574dcc, #2a1a6e);
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .signup-link a {
+            color: #6c63ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+
+        .image-section {
+            flex: 1;
+            background: linear-gradient(135deg, #6c63ff, #3a2a8e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* Reduced padding */
+        }
+
+        .image-section img {
+            max-width: 90%; /* Scaled down image */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                max-width: 100%; /* Adjust for mobile screens */
+            }
+
+            .image-section {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Create Account</h1>
+            <p>Join us and start predicting laptop prices accurately.</p>
+            <form method="POST" action="{% url 'accounts:signup' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="uname">Username</label>
+                    <input type="text" id="uname" name="uname" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="upass">Password</label>
+                    <input type="password" id="upass" name="upass" placeholder="Create a strong password" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required pattern="[0-9]{10}">
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <div class="signup-link">
+                Already have an account? <a href="{% url 'accounts:login' %}">Login here</a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="{% static 'image/1.png' %}" alt="Sign Up Illustration">
+        </div>
+    </div>
+</body>
+</html>

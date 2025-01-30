@@ -1,0 +1,284 @@
+{% extends '../home/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    /* General Styles */
+    .form-section {
+        padding: 50px;
+        border-radius: 20px;
+        background-image: url("{% static 'image/banner12.jpg' %}");
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        margin: 60px auto;
+        max-width: 1200px;
+        color: #fff;
+    }
+
+    .form-section h2 {
+        text-align: center;
+        font-size: 36px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .form-column {
+        flex: 1;
+        min-width: 280px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .form-column:hover {
+        transform: scale(1.02);
+    }
+
+    .form-column label {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .form-column input[list],
+    .form-column input[type="number"] {
+        width: 100%;
+        padding: 15px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #333;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .form-column input[list]:focus,
+    .form-column input[type="number"]:focus {
+        outline: none;
+        background-color: #fff;
+        border-color: #4a00e0;
+        box-shadow: 0 0 10px rgba(74, 0, 224, 0.5);
+    }
+
+    button[type="submit"] {
+        display: block;
+        width: 50%;
+        margin: 0 auto; /* Centers the button horizontally */
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .price-field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .price-field label {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .price-field input[type="number"] {
+        width: 50%;
+        padding: 15px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #333;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .price-field input[type="number"]:focus {
+        outline: none;
+        background-color: #fff;
+        border-color: #4a00e0;
+        box-shadow: 0 0 10px rgba(74, 0, 224, 0.5);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .form-container {
+            flex-direction: column;
+        }
+
+        .form-column {
+            margin-bottom: 20px;
+        }
+    }
+</style>
+<style>
+    .neon-button {
+        position: relative;
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        background: #111;
+        border: 2px solid #3498db;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        box-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 40px #3498db;
+    }
+
+    .neon-button::before {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        background: linear-gradient(0deg, transparent, rgba(52, 152, 219, 0.4), transparent);
+        transform: skewY(45deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .neon-button:hover::before {
+        top: 100%;
+    }
+
+    .neon-button:hover {
+        color: #3498db;
+        background: #222;
+        box-shadow: 0 0 20px #3498db, 0 0 30px #3498db, 0 0 50px #3498db;
+        transform: scale(1.1);
+    }
+
+    .neon-button:active {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px #3498db, 0 0 15px #3498db, 0 0 30px #3498db;
+    }
+</style>
+
+<div class="form-section">
+    <h2>Enter Laptop Details</h2>
+    <form method="POST" action="{% url 'predictor:predict_price' %}">
+        {% csrf_token %}
+        <div class="form-container">
+            <!-- Column 1 -->
+            <div class="form-column">
+                <label for="company">Company:</label>
+                <input list="companies" id="company" name="company" placeholder="Enter or select a company" required>
+                <datalist id="companies">
+                    {% for company in companies %}
+                        <option value="{{ company }}">
+                    {% endfor %}
+                </datalist>
+
+                <label for="typename">Type Name:</label>
+                <input list="typenames" id="typename" name="typename" placeholder="Enter or select a type" required>
+                <datalist id="typenames">
+                    {% for typename in typename_list %}
+                        <option value="{{ typename }}">
+                    {% endfor %}
+                </datalist>
+
+                <label for="screen_resolution">Screen Resolution:</label>
+                <input list="screen_resolutions" name="screen_resolution" id="screen_resolution" placeholder="Enter or select a resolution">
+                <datalist id="screen_resolutions">
+                    {% for resolution in screen_resolutions %}
+                        <option value="{{ resolution }}">
+                    {% endfor %}
+                </datalist>
+
+                <label for="cpu">CPU:</label>
+                <input list="cpus" id="cpu" name="cpu" placeholder="Enter or select a CPU" required>
+                <datalist id="cpus">
+                    {% for cpu in cpus %}
+                        <option value="{{ cpu }}">
+                    {% endfor %}
+                </datalist>
+
+                <label for="screen_size">Screen Size (in Inches):</label>
+                <input list="screen_sizes" name="screen_size" id="screen_size" placeholder="Enter or select a size">
+                <datalist id="screen_sizes">
+                    {% for size in screen_sizes %}
+                        <option value="{{ size }}">
+                    {% endfor %}
+                </datalist>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="form-column">
+                <label for="ram">RAM (in GB):</label>
+                <input list="rams" id="ram" name="ram" placeholder="Enter or select RAM" required>
+                <datalist id="rams">
+                    {% for ram_value in ram_values %}
+                        <option value="{{ ram_value }}">
+                    {% endfor %}
+                </datalist>
+
+                <label for="memory">Memory (in GB):</label>
+                <input list="memories" id="memory" name="memory" placeholder="Enter or select memory" required>
+                <datalist id="memories">
+                    {% for memory_value in memory_values %}
+                        <option value="{{ memory_value }}">
+                    {% endfor %}
+                </datalist>
+
+                <label for="gpu">GPU:</label>
+                <input list="gpus" id="gpu" name="gpu" placeholder="Enter or select GPU" required>
+                <datalist id="gpus">
+                    {% for gpu in gpus %}
+                        <option value="{{ gpu }}">
+                    {% endfor %}
+                </datalist>
+
+                <label for="opsys">Operating System:</label>
+                <input list="opsystems" id="opsys" name="opsys" placeholder="Enter or select OS" required>
+                <datalist id="opsystems">
+                    {% for os in opsys %}
+                        <option value="{{ os }}">
+                    {% endfor %}
+                </datalist>
+
+                <label for="weight">Weight (in kg):</label>
+                <input list="weights" id="weight" name="weight" placeholder="Enter or select weight" required>
+                <datalist id="weights">
+                    {% for weight_value in weight_values %}
+                        <option value="{{ weight_value }}">
+                    {% endfor %}
+                </datalist>
+            </div>
+
+            <!-- Price Field -->
+            <div class="price-field">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" placeholder="Enter the price" required>
+            </div>
+        </div><br>
+
+        <button type="submit" class="neon-button">Predict Price</button>
+    </form>
+</div>
+
+<script src="{% static 'js/theme-change.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,251 @@
+{% extends '../home/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}">
+
+<style>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+    /* Profile Section */
+    .profile-section {
+        padding: 40px 20px;
+        margin-top: 20px;
+    }
+
+    .profile-container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        color: #333;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        text-align: center; /* Center content in profile container */
+    }
+
+    .profile-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column; /* Stack header elements */
+        margin-bottom: 30px;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover; 
+        margin-bottom: 20px; /* Add spacing below image */
+    }
+
+    .profile-info h1 {
+        font-size: 2rem;
+        margin: 0 0 10px 0;
+        color: #2575fc; /* Changed heading color */
+    }
+
+    .profile-info p {
+        font-size: 1rem;
+        margin: 0;
+        color: #555;
+    }
+
+    /* Update Profile Form */
+    .profile-form {
+        text-align: left; /* Align form elements to the left */ 
+        margin-top: 30px; 
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: block; /* Display labels on their own line */
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        width: 100%; /* Make input fields fill the width */
+    }
+
+    /* Button Styling */
+    .btn-container {
+        display: flex;
+        justify-content: center; 
+        margin-top: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 25px;
+        margin: 0 10px; 
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.3s;
+        font-weight: 600;
+    }
+
+    .btn-primary {
+        background: #2575fc; /* Changed primary button color */
+        color: white;
+        border: none;
+    }
+
+    .btn-secondary {
+        background: #ff3b30;
+        color: white;
+        border: none;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px); 
+        opacity: 0.9;
+    }
+
+    /* History Section */
+    .history-section {
+        padding: 40px 20px;
+    }
+
+    .history-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .history-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .history-item {
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .history-item:last-child {
+        border-bottom: none;
+    }
+
+    .history-details p {
+        margin: 5px 0;
+        font-size: 0.9rem;
+        text-align: left; /* Align prediction details to the left */
+    }
+
+    .history-details strong {
+        color: #2575fc; /* Changed highlight color */
+    }
+
+    .history-date {
+        font-size: 0.8rem;
+        color: #777;
+    }
+
+    /* Responsive Design (for smaller screens) */
+    @media (max-width: 600px) {
+        .profile-header {
+            flex-direction: column; 
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 15px; 
+        }
+
+        .history-item {
+            flex-direction: column; 
+            align-items: flex-start; 
+        }
+
+        .history-date {
+            text-align: left; 
+            margin-top: 5px;
+        }
+    }
+</style>
+
+    <main>
+        <section id="profile" class="profile-section">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <img src="{% static 'image/laptop.png' %}" alt="Profile Picture" class="profile-picture">
+                    <div class="profile-info">
+                        <h1>{{ request.session.uname }}</h1>
+                        <p>{{ request.session.email }}</p> 
+                    </div>
+                </div>
+
+                <form method="POST" action="{% url 'accounts:update_profile' %}" class="profile-form">
+                    {% csrf_token %}
+                     
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" value="{{ request.session.uname }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="{{ request.session.email }}" required>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                        <a href="{% url 'accounts:logout' %}" class="btn btn-secondary">Log Out</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- <section id="history" class="history-section">
+            <div class="history-container">
+                <h2>Prediction History</h2>
+                {% if predictions %}
+                    <ul class="history-list">
+                        {% for prediction in predictions %}
+                            <li class="history-item">
+                                <div class="history-details">
+                                    <p><strong>Laptop:</strong> {{ prediction.laptop_model }}</p>
+                                    <p><strong>Predicted Price:</strong> ${{ prediction.predicted_price }}</p>
+                                </div>
+                                <p class="history-date">{{ prediction.date }}</p> 
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No predictions yet. Start predicting now!</p>
+                {% endif %}
+            </div>
+        </section> -->
+
+    </main>
+     <!-- theme switch js (light and dark)-->
+     <script src="{%static 'js/theme-change.js'%}"></script>
+     <!-- //theme switch js (light and dark)-->
+ 
+{% endblock %}

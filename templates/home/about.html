@@ -1,0 +1,450 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{%static 'css/style-starter.css'%}">
+<link href="//fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+    .fancy-button {
+        position: relative;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+        color: #0a0a0a;
+        background: linear-gradient(45deg, #6ec1e4, #4fa3d1); /* Light blue gradient */
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* .fancy-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent
+        );
+        transition: 0.5s; */
+    
+
+    .fancy-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        color: white;
+        background: linear-gradient(45deg, #4fa3d1, #6ec1e4); /* Reverse gradient on hover */
+    }
+
+    .fancy-button:hover::before {
+        left: 100%;
+    }
+
+    .fancy-button:active {
+        transform: translateY(2px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Optional ripple effect */
+    .fancy-button .ripple {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        pointer-events: none;
+        transform: scale(0);
+        animation: ripple 0.6s linear;
+    }
+
+    @keyframes ripple {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+</style>
+
+
+   
+
+    
+    <!-- inner banner -->
+    <section class="inner-banner py-sm-5 py-4">
+        <div class="w3l-breadcrumb pt-5 pb-4">
+            <div class="container py-xl-5 py-lg-4">
+                <h4 class="inner-text-title font-weight-bold pt-5">About Us</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li class="active"><i class="fas fa-angle-right mx-2"></i>About</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //inner banner -->
+
+    <!-- about section -->
+<div class="w3l-about-content py-5">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="{% static 'image/banner8.jpg' %}" class="img-fluid radius-image" alt="Laptop Price Prediction">
+            </div>
+            <div class="col-lg-6 ps-lg-5 mt-lg-0 mt-4">
+                <div class="title-main">
+                    <p>About Us</p>
+                    <h3 class="title-style">Your Trusted Laptop Price Prediction Platform</h3>
+                </div>
+                <p class="mt-4">We specialize in predicting laptop prices based on key configurations such as CPU, memory, RAM, and more. Our platform helps you make data-driven decisions effortlessly.</p>
+                <p class="mt-3">Using advanced machine learning models, we analyze historical and real-time data to provide highly accurate price predictions tailored to your requirements.</p>
+                <br><br>
+                <a href="#about" class="fancy-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //about section -->
+
+
+   <!-- stats section -->
+<section class="w3_stats py-5" id="stats">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="title-main text-center mx-auto mb-5" style="max-width:600px;">
+            <p>Statistics</p>
+            <h3 class="title-style text-white"> Expertise in Laptop Price Prediction</h3>
+        </div>
+        <div class="w3-stats text-center py-lg-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="counter">
+                        <i class="fas fa-laptop"></i>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="timer" data-to="200" data-speed="1500"></div>
+                            <span class="stats-plus">+</span>
+                        </div>
+                        <p class="count-text">Laptops Analyzed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter">
+                        <i class="fas fa-user-check"></i>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="timer" data-to="100" data-speed="1500"></div>
+                            <span class="stats-plus">+</span>
+                        </div>
+                        <p class="count-text">Satisfied Users</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="counter">
+                        <i class="fas fa-award"></i>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="timer" data-to="30" data-speed="1500"></div>
+                            <span class="stats-plus">+</span>
+                        </div>
+                        <p class="count-text">Models Trained</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="counter">
+                        <i class="fas fa-building"></i>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="timer" data-to="130" data-speed="1500"></div>
+                            <span class="stats-plus">+</span>
+                        </div>
+                        <p class="count-text">Partner Brands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //stats section -->
+
+    <!-- team section -->
+    <section class="w3l-team-main py-5" id="team">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:600px;">
+                <p>Our Team</p>
+                <h3 class="title-style">Meet our Tours Agents</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-3 col-6">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="{%static 'image/team1.jpg'%}" alt="" class="radius-image">
+                        </div>
+                        <a href="#url" class="team-title">Akash Pardhi</a>
+                        <div class="socials">
+                            <a href="#facebook">
+                                <span class="fab fa-facebook-f"></span>
+                            </a>
+                            <a href="#twitter">
+                                <span class="fab fa-twitter"></span>
+                            </a>
+                            <a href="#linkedin-in">
+                                <span class="fab fa-linkedin-in"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="{%static 'image/team2.jpg'%}" alt="" class="radius-image">
+                        </div>
+                        <a href="#url" class="team-title">Krushna Dode</a>
+                        <div class="socials">
+                            <a href="#facebook">
+                                <span class="fab fa-facebook-f"></span>
+                            </a>
+                            <a href="#twitter">
+                                <span class="fab fa-twitter"></span>
+                            </a>
+                            <a href="#linkedin-in">
+                                <span class="fab fa-linkedin-in"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-lg-0 mt-4">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="{%static 'image/team3.jpg'%}" alt="" class="radius-image">
+                        </div>
+                        <a href="#url" class="team-title">Sanket Nikam</a>
+                        <div class="socials">
+                            <a href="#facebook">
+                                <span class="fab fa-facebook-f"></span>
+                            </a>
+                            <a href="#twitter">
+                                <span class="fab fa-twitter"></span>
+                            </a>
+                            <a href="#linkedin-in">
+                                <span class="fab fa-linkedin-in"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-lg-0 mt-4">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="{%static 'image/team4.jpg'%}" alt="" class="radius-image">
+                        </div>
+                        <a href="#url" class="team-title">Atul Mali</a>
+                        <div class="socials">
+                            <a href="#facebook">
+                                <span class="fab fa-facebook-f"></span>
+                            </a>
+                            <a href="#twitter">
+                                <span class="fab fa-twitter"></span>
+                            </a>
+                            <a href="#linkedin-in">
+                                <span class="fab fa-linkedin-in"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //team section -->
+
+   <!-- testimonials section -->
+<section class="w3l-clients py-5 mb-5 mt-4" id="testimonials">
+    <div class="container py-md-5 py-4">
+        <div class="title-main text-center mx-auto mb-5" style="max-width:600px;">
+            <p class="mt-2">Testimonials</p>
+            <h3 class="title-style">Happy with Our Accurate Predictions</h3>
+        </div>
+        <div id="owl-demo2" class="owl-carousel owl-theme mt-4 py-md-2 mb-md-4">
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i> The prediction accuracy is outstanding!
+                        </blockquote>
+                        <p>I was amazed by how precise the laptop price predictions were. This tool helped me choose the best option within my budget!</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img src="{% static 'image/testi4.jpg' %}"
+                                class="img-responsive" alt="User Feedback"></a>
+                        <div class="people-info align-self">
+                            <h3>Atul Mali</h3>
+                            <p class="identity">Tech Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i> Saved me a lot of time and money!
+                        </blockquote>
+                        <p>This platform is a game-changer. The price predictions were highly accurate, and I confidently purchased a laptop without overpaying.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img src="{% static 'image/testi2.jpg' %}"
+                                class="img-responsive" alt="User Feedback"></a>
+                        <div class="people-info align-self">
+                            <h3>Jagdish Chitte</h3>
+                            <p class="identity">Data Analyst</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i> A must-have for tech buyers.
+                        </blockquote>
+                        <p>As someone who shops for laptops frequently, this tool provides the insights I need to make smart purchases every time.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img src="{% static 'image/testi3.jpg' %}"
+                                class="img-responsive" alt="User Feedback"></a>
+                        <div class="people-info align-self">
+                            <h3>Krushna Dode</h3>
+                            <p class="identity">Freelance Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //testimonials section -->
+
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="{%static 'js/jquery-3.3.1.min.js'%}"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- counter-->
+    <script src="{%static 'js/counter.js'%}"></script>
+    <!-- //counter-->
+
+    <!-- owl carousel -->
+    <script src="{%static 'js/owl.carousel.js'%}"></script>
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo2").owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 50,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    },
+                    991: {
+                        items: 2,
+                        margin: 30,
+                        nav: false
+                    },
+                    1080: {
+                        items: 2,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+    <!-- owl carousel -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="{%static 'js/theme-change.js'%}"></script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!-- bootstrap -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <!-- //bootstrap -->
+    <!-- //Js scripts -->
+    
+{% endblock %}

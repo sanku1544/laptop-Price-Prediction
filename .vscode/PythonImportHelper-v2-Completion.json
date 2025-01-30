@@ -1,0 +1,1476 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "google.generativeai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "google.generativeai",
+        "description": "google.generativeai",
+        "detail": "google.generativeai",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "a2b_base64",
+        "importPath": "binascii",
+        "description": "binascii",
+        "isExtraImport": true,
+        "detail": "binascii",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "openai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openai",
+        "description": "openai",
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0001_initial",
+        "description": "accounts.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Subscriber',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('email', models.EmailField(max_length=254, unique=True)),",
+        "detail": "accounts.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "AccountsConfig",
+        "kind": 6,
+        "importPath": "accounts.apps",
+        "description": "accounts.apps",
+        "peekOfCode": "class AccountsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'accounts'",
+        "detail": "accounts.apps",
+        "documentation": {}
+    },
+    {
+        "label": "SubscriptionForm",
+        "kind": 6,
+        "importPath": "accounts.forms",
+        "description": "accounts.forms",
+        "peekOfCode": "class SubscriptionForm(forms.Form):\n    email = forms.EmailField(\n        label='Email Address',\n        widget=forms.EmailInput(attrs={\n            'placeholder': 'Email Address',\n            'class': 'form-control'\n        })\n    )",
+        "detail": "accounts.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Subscriber",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class Subscriber(models.Model):\n    email = models.EmailField(unique=True)\n    subscribed_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.email",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "accounts.urls",
+        "description": "accounts.urls",
+        "peekOfCode": "app_name = 'accounts'  # This defines the namespace\nurlpatterns = [\n    path('login/', views.login_view, name='login'),\n    path('logout/', views.logout_view, name='logout'),\n    path('signup/', views.signup, name='signup'),\n    path('profile/', views.profile_view, name='profile'),\n    path('update-profile/', views.update_profile, name='update_profile'),\n    path('forgot_password/', views.forgot_password, name='forgot_password'),\n    path('verify_otp/', views.verify_otp, name='verify_otp'),\n    path(\"subscribe/\", views.subscribe, name=\"subscribe\"),",
+        "detail": "accounts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "accounts.urls",
+        "description": "accounts.urls",
+        "peekOfCode": "urlpatterns = [\n    path('login/', views.login_view, name='login'),\n    path('logout/', views.logout_view, name='logout'),\n    path('signup/', views.signup, name='signup'),\n    path('profile/', views.profile_view, name='profile'),\n    path('update-profile/', views.update_profile, name='update_profile'),\n    path('forgot_password/', views.forgot_password, name='forgot_password'),\n    path('verify_otp/', views.verify_otp, name='verify_otp'),\n    path(\"subscribe/\", views.subscribe, name=\"subscribe\"),\n]",
+        "detail": "accounts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "update_profile",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def update_profile(request):\n    if request.method == 'POST':\n        # Handle the profile update logic\n        username = request.POST.get('username')\n        email = request.POST.get('email')\n        bio = request.POST.get('bio')\n        # Update the user fields\n        request.user.username = username\n        request.user.email = email\n        # Handle the user profile if it exists",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def signup(request):\n    if request.method == 'POST':\n        uname = request.POST.get('uname')\n        upass = request.POST.get('upass')  # Avoid storing passwords in plaintext\n        email = request.POST.get('email')\n        mobile = request.POST.get('mobile')\n        # Connect to the MySQL database\n        mydb = mysql.connector.connect(\n            host=\"127.0.0.1\",\n            user=\"root\",",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def login_view(request):\n    if request.method == 'POST':\n        email = request.POST.get('email')\n        upass = request.POST.get('upass')\n        # Connect to the MySQL database\n        mydb = mysql.connector.connect(\n            host=\"127.0.0.1\",\n            user=\"root\",\n            password=\"\",\n            database=\"project13\"  # Replace with your database name",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_view",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def logout_view(request):\n    auth_logout(request)  # Log the user out\n    request.session.flush()  # Clear the session data\n    return redirect('home')  # Redirect to home page after logout\ndef profile_view(request):\n    uid = request.session.get('uid')\n    email = request.session.get('email')\n    uname = request.session.get('uname')\n    return render(request, 'accounts/profile.html', {'uname': uname, 'email': email})\nfrom django.shortcuts import render, redirect",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "profile_view",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def profile_view(request):\n    uid = request.session.get('uid')\n    email = request.session.get('email')\n    uname = request.session.get('uname')\n    return render(request, 'accounts/profile.html', {'uname': uname, 'email': email})\nfrom django.shortcuts import render, redirect\nfrom django.contrib import messages\ndef subscribe(request):\n    if request.method == \"POST\":\n        email = request.POST.get(\"email\")",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "subscribe",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def subscribe(request):\n    if request.method == \"POST\":\n        email = request.POST.get(\"email\")\n        # Save the email to the database (Assuming a Subscriber model exists)\n        # Subscriber.objects.create(email=email)\n        request.session[\"subscribed\"] = True  # Store in session\n        messages.success(request, \"Thanks for subscribing!\")\n        return redirect(\"home\")  # Redirect to home or any page\n    return render(request, \"accounts/base.html\", {\"subscribed\": request.session.get(\"subscribed\", False)})\nimport random",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "forgot_password",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def forgot_password(request):\n    if request.method == 'POST':\n        email = request.POST.get('email')\n        # Connect to MySQL\n        mydb = mysql.connector.connect(\n            host=\"127.0.0.1\",\n            user=\"root\",\n            password=\"\",\n            database=\"project13\"\n        )",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "send_otp_email",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def send_otp_email(email, otp):\n    sender_email = \"your-email@gmail.com\"  # Update with your email\n    sender_password = \"your-email-password\"  # Update with your email password\n    subject = \"Your Password Reset OTP\"\n    message = f\"Your OTP for password reset is: {otp}\"\n    msg = MIMEText(message)\n    msg['Subject'] = subject\n    msg['From'] = sender_email\n    msg['To'] = email\n    try:",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "verify_otp",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def verify_otp(request):\n    email = request.GET.get('email')\n    if request.method == \"POST\":\n        otp_entered = request.POST.get('otp')\n        new_password = request.POST.get('new_password')\n        # Check if OTP is correct\n        if email in otp_storage and otp_storage[email] == otp_entered:\n            # Hash the new password\n            hashed_password = new_password  # Use Django's make_password(new_password) for security\n            # Update password in MySQL",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "otp_storage",
+        "kind": 5,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "otp_storage = {}\ndef forgot_password(request):\n    if request.method == 'POST':\n        email = request.POST.get('email')\n        # Connect to MySQL\n        mydb = mysql.connector.connect(\n            host=\"127.0.0.1\",\n            user=\"root\",\n            password=\"\",\n            database=\"project13\"",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "ChatConfig",
+        "kind": 6,
+        "importPath": "chat.apps",
+        "description": "chat.apps",
+        "peekOfCode": "class ChatConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'chat'",
+        "detail": "chat.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "chat.urls",
+        "description": "chat.urls",
+        "peekOfCode": "urlpatterns = [\n    # Other URL patterns\n    path('chat/', views.chat_with_gemini, name='chat_with_gemini'),\n]",
+        "detail": "chat.urls",
+        "documentation": {}
+    },
+    {
+        "label": "chat_with_gemini",
+        "kind": 2,
+        "importPath": "chat.views",
+        "description": "chat.views",
+        "peekOfCode": "def chat_with_gemini(request):\n    \"\"\"Handles the chat request and gets a response from Gemini API.\"\"\"\n    if request.method == \"POST\":\n        try:\n            data = json.loads(request.body)  # Parse the request body\n            user_input = data.get(\"userInput\", \"\").strip()\n            # Check if the user input is empty\n            if not user_input:\n                return JsonResponse({\"error\": \"User input cannot be empty.\"}, status=400)\n            # Create contents structure as required by Gemini API",
+        "detail": "chat.views",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "chat.views",
+        "description": "chat.views",
+        "peekOfCode": "API_KEY = \"AIzaSyCjcGLFJBkmKOSc3lb2LPZVI7506uODLWw\"\n# Configure the API\ngenai.configure(api_key=API_KEY)\nmodel = genai.GenerativeModel(\"gemini-pro\")\n@csrf_exempt  # Disable CSRF for AJAX requests\ndef chat_with_gemini(request):\n    \"\"\"Handles the chat request and gets a response from Gemini API.\"\"\"\n    if request.method == \"POST\":\n        try:\n            data = json.loads(request.body)  # Parse the request body",
+        "detail": "chat.views",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "chat.views",
+        "description": "chat.views",
+        "peekOfCode": "model = genai.GenerativeModel(\"gemini-pro\")\n@csrf_exempt  # Disable CSRF for AJAX requests\ndef chat_with_gemini(request):\n    \"\"\"Handles the chat request and gets a response from Gemini API.\"\"\"\n    if request.method == \"POST\":\n        try:\n            data = json.loads(request.body)  # Parse the request body\n            user_input = data.get(\"userInput\", \"\").strip()\n            # Check if the user input is empty\n            if not user_input:",
+        "detail": "chat.views",
+        "documentation": {}
+    },
+    {
+        "label": "HomeConfig",
+        "kind": 6,
+        "importPath": "home.apps",
+        "description": "home.apps",
+        "peekOfCode": "class HomeConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'home'",
+        "detail": "home.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Feedback",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class Feedback(models.Model):\n    name = models.CharField(max_length=100)\n    email = models.CharField(max_length=100)\n    category = models.CharField(max_length=50)\n    rating = models.IntegerField()\n    feedback_message = models.TextField()\n    created_at = models.DateTimeField(auto_now_add=True)\n    is_resolved = models.BooleanField(default=False)\n    class Meta:\n        db_table = 'feedback'  # Specify the existing table name",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "home.urls",
+        "description": "home.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.home, name='home'),    \n    path('about/', views.about, name='about'),\n    path('contact/', views.contact, name='contact'),\n    path('contact_form/', views.contact_form, name='contact_form'),  # Fix here, use a unique name\n    path('profile/', views.profile, name='profile'),\n    path('ppredict/', views.ppredict, name='ppredict'),\n    path('predict2/', views.predict2, name='predict2'),\n    path('feedback/', views.feedback, name='feedback'),\n    path('feedback_form/', views.feedback_form, name='feedback_form'),",
+        "detail": "home.urls",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def home(request):\n    return render(request, 'home/index.html')\ndef about(request):\n    return render(request, 'home/about.html')\ndef contact(request):\n    return render(request, 'home/contact.html')\ndef feedback(request):\n    return render(request, 'home/feedback.html')\ndef profile(request):\n    return render(request, 'home/profile.html')",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def about(request):\n    return render(request, 'home/about.html')\ndef contact(request):\n    return render(request, 'home/contact.html')\ndef feedback(request):\n    return render(request, 'home/feedback.html')\ndef profile(request):\n    return render(request, 'home/profile.html')\nCSV_FILE_PATH = r'd:\\laptop_data.csv'  # Define the CSV file path\ndef ppredict(request):",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def contact(request):\n    return render(request, 'home/contact.html')\ndef feedback(request):\n    return render(request, 'home/feedback.html')\ndef profile(request):\n    return render(request, 'home/profile.html')\nCSV_FILE_PATH = r'd:\\laptop_data.csv'  # Define the CSV file path\ndef ppredict(request):\n    if request.method == 'POST':\n        try:",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "feedback",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def feedback(request):\n    return render(request, 'home/feedback.html')\ndef profile(request):\n    return render(request, 'home/profile.html')\nCSV_FILE_PATH = r'd:\\laptop_data.csv'  # Define the CSV file path\ndef ppredict(request):\n    if request.method == 'POST':\n        try:\n            # Extract and validate inputs\n            ram = int(request.POST.get('ram', 0))",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "profile",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def profile(request):\n    return render(request, 'home/profile.html')\nCSV_FILE_PATH = r'd:\\laptop_data.csv'  # Define the CSV file path\ndef ppredict(request):\n    if request.method == 'POST':\n        try:\n            # Extract and validate inputs\n            ram = int(request.POST.get('ram', 0))\n            memory = int(request.POST.get('memory', 0))\n            if ram <= 0 or memory <= 0:",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "ppredict",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def ppredict(request):\n    if request.method == 'POST':\n        try:\n            # Extract and validate inputs\n            ram = int(request.POST.get('ram', 0))\n            memory = int(request.POST.get('memory', 0))\n            if ram <= 0 or memory <= 0:\n                return render(request, 'predictor/predict1.html', {'error': 'RAM and Memory must be positive numbers.'})\n            # Load and preprocess CSV data\n            df = pd.read_csv(CSV_FILE_PATH)",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "predict2",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def predict2(request):\n    if request.method == 'POST':\n        try:\n            print(\"Form submitted successfully.\")\n            # Debug inputs\n            ram = request.POST.get('ram')\n            memory = request.POST.get('memory')\n            cpu = request.POST.get('cpu')\n            print(f\"RAM: {ram}, Memory: {memory}, CPU: {cpu}\")\n            # Ensure inputs are valid and convert to integers",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "contact_form",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def contact_form(request):\n    if request.method == 'POST':\n        # Retrieve data from POST request\n        name = request.POST.get('name')\n        mobile = request.POST.get('mobile')\n        email = request.POST.get('email')\n        query = request.POST.get('query')\n        msg = request.POST.get('msg')\n        # Check if the fields are not empty (basic validation)\n        if not name or not mobile or not email or not query or not msg:",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "feedback_form",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def feedback_form(request):\n    if request.method == 'POST':\n        # Retrieve data from POST request\n        name = request.POST.get('name')\n        mobile = request.POST.get('mobile')\n        email = request.POST.get('email')\n        rate = request.POST.get('rate')\n        msg = request.POST.get('msg')\n        print(rate)\n        # Check if the fields are not empty (basic validation)",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "CSV_FILE_PATH",
+        "kind": 5,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "CSV_FILE_PATH = r'd:\\laptop_data.csv'\n# ... (rest of your code remains the same)\ndef home(request):\n    return render(request, 'home/index.html')\ndef about(request):\n    return render(request, 'home/about.html')\ndef contact(request):\n    return render(request, 'home/contact.html')\ndef feedback(request):\n    return render(request, 'home/feedback.html')",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "CSV_FILE_PATH",
+        "kind": 5,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "CSV_FILE_PATH = r'd:\\laptop_data.csv'  # Define the CSV file path\ndef ppredict(request):\n    if request.method == 'POST':\n        try:\n            # Extract and validate inputs\n            ram = int(request.POST.get('ram', 0))\n            memory = int(request.POST.get('memory', 0))\n            if ram <= 0 or memory <= 0:\n                return render(request, 'predictor/predict1.html', {'error': 'RAM and Memory must be positive numbers.'})\n            # Load and preprocess CSV data",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "laptop_price_project.asgi",
+        "description": "laptop_price_project.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "laptop_price_project.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-olahwzm3c6y=1&b9$@h-!@%fwaxm=6qae9jtvcrlmhjf@fnp@l'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-olahwzm3c6y=1&b9$@h-!@%fwaxm=6qae9jtvcrlmhjf@fnp@l'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'predictor',",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'predictor',\n    'home',\n    'accounts',",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'allauth.account.middleware.AccountMiddleware',\n]",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "ROOT_URLCONF = 'laptop_price_project.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'laptop_price_project.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SITE_ID",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "SITE_ID = 1\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]\nAUTHENTICATION_BACKENDS = [",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]\nAUTHENTICATION_BACKENDS = [\n    'allauth.account.auth_backends.AuthenticationBackend',  # for google",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]\nAUTHENTICATION_BACKENDS = [\n    'allauth.account.auth_backends.AuthenticationBackend',  # for google\n]",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]\nAUTHENTICATION_BACKENDS = [\n    'allauth.account.auth_backends.AuthenticationBackend',  # for google\n]\nSOCIALACCOUNT_PROVIDERS = {",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]\nAUTHENTICATION_BACKENDS = [\n    'allauth.account.auth_backends.AuthenticationBackend',  # for google\n]\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n        'APP': {\n            'client_id': '460815380900-ek0c2nm5dk8s0v4frvslfa1se6bj84b5.apps.googleusercontent.com',",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]\nAUTHENTICATION_BACKENDS = [\n    'allauth.account.auth_backends.AuthenticationBackend',  # for google\n]\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n        'APP': {\n            'client_id': '460815380900-ek0c2nm5dk8s0v4frvslfa1se6bj84b5.apps.googleusercontent.com',\n            'secret': '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',",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTHENTICATION_BACKENDS",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "AUTHENTICATION_BACKENDS = [\n    'allauth.account.auth_backends.AuthenticationBackend',  # for google\n]\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n        'APP': {\n            'client_id': '460815380900-ek0c2nm5dk8s0v4frvslfa1se6bj84b5.apps.googleusercontent.com',\n            'secret': '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',\n            'key': ''\n        }",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SOCIALACCOUNT_PROVIDERS",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "SOCIALACCOUNT_PROVIDERS = {\n    'google': {\n        'APP': {\n            'client_id': '460815380900-ek0c2nm5dk8s0v4frvslfa1se6bj84b5.apps.googleusercontent.com',\n            'secret': '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',\n            'key': ''\n        }\n    }\n}\nLOGIN_URL = 'login'",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "LOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'game'\nACCOUNT_LOGOUT_REDIRECT_URL = 'login'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGOUT_REDIRECT_URL = '/'",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGOUT_URL",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "LOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'game'\nACCOUNT_LOGOUT_REDIRECT_URL = 'login'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGOUT_REDIRECT_URL = '/'",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = 'game'\nACCOUNT_LOGOUT_REDIRECT_URL = 'login'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGOUT_REDIRECT_URL = '/'",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ACCOUNT_LOGOUT_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "ACCOUNT_LOGOUT_REDIRECT_URL = 'login'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGOUT_REDIRECT_URL = '/'",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGOUT_REDIRECT_URL = '/'",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGOUT_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "laptop_price_project.settings",
+        "description": "laptop_price_project.settings",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'",
+        "detail": "laptop_price_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "laptop_price_project.urls",
+        "description": "laptop_price_project.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('home.urls')),  # This will handle home/ URLs)\n    path('', include('chat.urls')),  # This will handle chat/ URLs)\n    path('predictor', include('predictor.urls')), \n    path('accounts/', include('accounts.urls')),  # This will handle predictor/ URLs\n    path('accounts/', include('allauth.urls')),  # This will handle predictor/ URLs\n  # This will handle predictor/ URLs\n # This will handle predictor/ URLs\n]",
+        "detail": "laptop_price_project.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "laptop_price_project.wsgi",
+        "description": "laptop_price_project.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "laptop_price_project.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "PredictorConfig",
+        "kind": 6,
+        "importPath": "predictor.apps",
+        "description": "predictor.apps",
+        "peekOfCode": "class PredictorConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'predictor'",
+        "detail": "predictor.apps",
+        "documentation": {}
+    },
+    {
+        "label": "clean_memory",
+        "kind": 2,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "def clean_memory(value):\n    total = 0\n    # Handle NaN or missing values\n    if pd.isna(value):\n        return total\n    # Split multiple storage types (e.g., '128GB SSD + 1TB HDD')\n    for part in value.split('+'):\n        part = part.strip()  # Remove whitespace\n        if 'TB' in part:\n            total += float(re.search(r'\\d+', part).group()) * 1000  # Convert TB to GB",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "data = pd.read_csv('predictor/laptop_data.csv')\n# Data preprocessing\n# Function to clean 'Memory' column and extract numerical values\ndef clean_memory(value):\n    total = 0\n    # Handle NaN or missing values\n    if pd.isna(value):\n        return total\n    # Split multiple storage types (e.g., '128GB SSD + 1TB HDD')\n    for part in value.split('+'):",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "data['Ram']",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "data['Ram'] = data['Ram'].astype(str).str.extract(r'(\\d+)').astype(float)\n# Clean 'Memory' column using the clean_memory function\ndata['Memory'] = data['Memory'].apply(clean_memory)\n# Clean 'Weight' column: Remove 'kg' and convert to float\ndata['Weight'] = data['Weight'].astype(str).str.replace('kg', '').astype(float)\n# Handle any missing values after cleaning\ndata = data.dropna()\n# Encode categorical variables\nlabel_encoders = {}\ncategorical_columns = ['ScreenResolution', 'Cpu', 'Gpu', 'OpSys']",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "data['Memory']",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "data['Memory'] = data['Memory'].apply(clean_memory)\n# Clean 'Weight' column: Remove 'kg' and convert to float\ndata['Weight'] = data['Weight'].astype(str).str.replace('kg', '').astype(float)\n# Handle any missing values after cleaning\ndata = data.dropna()\n# Encode categorical variables\nlabel_encoders = {}\ncategorical_columns = ['ScreenResolution', 'Cpu', 'Gpu', 'OpSys']\nfor column in categorical_columns:\n    le = LabelEncoder()",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "data['Weight']",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "data['Weight'] = data['Weight'].astype(str).str.replace('kg', '').astype(float)\n# Handle any missing values after cleaning\ndata = data.dropna()\n# Encode categorical variables\nlabel_encoders = {}\ncategorical_columns = ['ScreenResolution', 'Cpu', 'Gpu', 'OpSys']\nfor column in categorical_columns:\n    le = LabelEncoder()\n    data[column] = le.fit_transform(data[column])\n    label_encoders[column] = le  # Save encoder for future use",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "data = data.dropna()\n# Encode categorical variables\nlabel_encoders = {}\ncategorical_columns = ['ScreenResolution', 'Cpu', 'Gpu', 'OpSys']\nfor column in categorical_columns:\n    le = LabelEncoder()\n    data[column] = le.fit_transform(data[column])\n    label_encoders[column] = le  # Save encoder for future use\n# Define features and target\nX = data[['ScreenResolution', 'Cpu', 'Ram', 'Memory', 'Gpu', 'OpSys', 'Weight']]",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "label_encoders",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "label_encoders = {}\ncategorical_columns = ['ScreenResolution', 'Cpu', 'Gpu', 'OpSys']\nfor column in categorical_columns:\n    le = LabelEncoder()\n    data[column] = le.fit_transform(data[column])\n    label_encoders[column] = le  # Save encoder for future use\n# Define features and target\nX = data[['ScreenResolution', 'Cpu', 'Ram', 'Memory', 'Gpu', 'OpSys', 'Weight']]\ny = data['Price']  # Assuming 'Price' is the target column in your CSV\n# Split the data into training and testing sets",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "categorical_columns",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "categorical_columns = ['ScreenResolution', 'Cpu', 'Gpu', 'OpSys']\nfor column in categorical_columns:\n    le = LabelEncoder()\n    data[column] = le.fit_transform(data[column])\n    label_encoders[column] = le  # Save encoder for future use\n# Define features and target\nX = data[['ScreenResolution', 'Cpu', 'Ram', 'Memory', 'Gpu', 'OpSys', 'Weight']]\ny = data['Price']  # Assuming 'Price' is the target column in your CSV\n# Split the data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "X = data[['ScreenResolution', 'Cpu', 'Ram', 'Memory', 'Gpu', 'OpSys', 'Weight']]\ny = data['Price']  # Assuming 'Price' is the target column in your CSV\n# Split the data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Train the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# Save the trained model and encoders\njoblib.dump(model, 'predictor/laptop_price_model.pkl')\njoblib.dump(label_encoders, 'predictor/label_encoders.pkl')",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "y = data['Price']  # Assuming 'Price' is the target column in your CSV\n# Split the data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Train the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# Save the trained model and encoders\njoblib.dump(model, 'predictor/laptop_price_model.pkl')\njoblib.dump(label_encoders, 'predictor/label_encoders.pkl')\nprint(\"Model training complete! The model and encoders have been saved.\")",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "predictor.train_model",
+        "description": "predictor.train_model",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X_train, y_train)\n# Save the trained model and encoders\njoblib.dump(model, 'predictor/laptop_price_model.pkl')\njoblib.dump(label_encoders, 'predictor/label_encoders.pkl')\nprint(\"Model training complete! The model and encoders have been saved.\")",
+        "detail": "predictor.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "predictor.urls",
+        "description": "predictor.urls",
+        "peekOfCode": "app_name = 'predictor'\nurlpatterns = [\n    path('', views.predictor, name='home'),\n    path('allinone/', views.allinone, name='allinone'),\n    path('predict/', views.predict_price, name='predict_price'),\n  # Add this line for registration\n]",
+        "detail": "predictor.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "predictor.urls",
+        "description": "predictor.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.predictor, name='home'),\n    path('allinone/', views.allinone, name='allinone'),\n    path('predict/', views.predict_price, name='predict_price'),\n  # Add this line for registration\n]",
+        "detail": "predictor.urls",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_laptop_data",
+        "kind": 2,
+        "importPath": "predictor.views",
+        "description": "predictor.views",
+        "peekOfCode": "def fetch_laptop_data():\n    # Connect to the MySQL database\n    conn = mysql.connector.connect(\n        host=\"localhost\", user=\"root\", password=\"password\", database=\"admin\"\n    )\n    cursor = conn.cursor(dictionary=True)\n    # Fetch data from the laptopdata table\n    cursor.execute(\"SELECT * FROM laptopdata\")\n    rows = cursor.fetchall()\n    conn.close()",
+        "detail": "predictor.views",
+        "documentation": {}
+    },
+    {
+        "label": "predictor",
+        "kind": 2,
+        "importPath": "predictor.views",
+        "description": "predictor.views",
+        "peekOfCode": "def predictor(request):\n    return render(request, 'home/index.html')\ndef allinone(request):\n    # Fetch data from the database\n    laptop_data = fetch_laptop_data()\n    # Extract unique values for dropdown lists\n    unique_screen_resolutions = laptop_data['ScreenResolution'].unique()\n    unique_screen_sizes = laptop_data['Inches'].unique()\n    unique_cpus = laptop_data['Cpu'].unique()\n    unique_gpus = laptop_data['Gpu'].unique()",
+        "detail": "predictor.views",
+        "documentation": {}
+    },
+    {
+        "label": "allinone",
+        "kind": 2,
+        "importPath": "predictor.views",
+        "description": "predictor.views",
+        "peekOfCode": "def allinone(request):\n    # Fetch data from the database\n    laptop_data = fetch_laptop_data()\n    # Extract unique values for dropdown lists\n    unique_screen_resolutions = laptop_data['ScreenResolution'].unique()\n    unique_screen_sizes = laptop_data['Inches'].unique()\n    unique_cpus = laptop_data['Cpu'].unique()\n    unique_gpus = laptop_data['Gpu'].unique()\n    unique_opsys = laptop_data['OpSys'].unique()\n    unique_companies = laptop_data['Company'].unique()",
+        "detail": "predictor.views",
+        "documentation": {}
+    },
+    {
+        "label": "extend_label_encoder",
+        "kind": 2,
+        "importPath": "predictor.views",
+        "description": "predictor.views",
+        "peekOfCode": "def extend_label_encoder(encoder, value):\n    \"\"\"Extend the encoder classes to include unseen labels.\"\"\"\n    if value not in encoder.classes_:\n        encoder.classes_ = np.append(encoder.classes_, value)\n    return encoder.transform([value])[0]\ndef predict_price(request):\n    if request.method == 'POST':\n        # Extract form data\n        screen_resolution = request.POST['screen_resolution']\n        cpu = request.POST['cpu']",
+        "detail": "predictor.views",
+        "documentation": {}
+    },
+    {
+        "label": "predict_price",
+        "kind": 2,
+        "importPath": "predictor.views",
+        "description": "predictor.views",
+        "peekOfCode": "def predict_price(request):\n    if request.method == 'POST':\n        # Extract form data\n        screen_resolution = request.POST['screen_resolution']\n        cpu = request.POST['cpu']\n        ram = float(request.POST['ram'].replace('GB', '').strip())\n        memory_str = request.POST['memory']\n        memory = float(''.join(filter(str.isdigit, memory_str)))\n        gpu = request.POST['gpu']\n        opsys = request.POST['opsys']",
+        "detail": "predictor.views",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "predictor.views",
+        "description": "predictor.views",
+        "peekOfCode": "model = joblib.load('predictor/laptop_price_model.pkl')\nlabel_encoders = joblib.load('predictor/label_encoders.pkl')\ndef fetch_laptop_data():\n    # Connect to the MySQL database\n    conn = mysql.connector.connect(\n        host=\"localhost\", user=\"root\", password=\"password\", database=\"admin\"\n    )\n    cursor = conn.cursor(dictionary=True)\n    # Fetch data from the laptopdata table\n    cursor.execute(\"SELECT * FROM laptopdata\")",
+        "detail": "predictor.views",
+        "documentation": {}
+    },
+    {
+        "label": "label_encoders",
+        "kind": 5,
+        "importPath": "predictor.views",
+        "description": "predictor.views",
+        "peekOfCode": "label_encoders = joblib.load('predictor/label_encoders.pkl')\ndef fetch_laptop_data():\n    # Connect to the MySQL database\n    conn = mysql.connector.connect(\n        host=\"localhost\", user=\"root\", password=\"password\", database=\"admin\"\n    )\n    cursor = conn.cursor(dictionary=True)\n    # Fetch data from the laptopdata table\n    cursor.execute(\"SELECT * FROM laptopdata\")\n    rows = cursor.fetchall()",
+        "detail": "predictor.views",
+        "documentation": {}
+    },
+    {
+        "label": "chat_with_bot",
+        "kind": 2,
+        "importPath": "test.chatgpt",
+        "description": "test.chatgpt",
+        "peekOfCode": "def chat_with_bot(user_input):\n    # Send a request to OpenAI's GPT model\n    response = openai.ChatCompletion.create(\n        model=\"gpt-3.5-turbo\",  # Use the gpt-3.5-turbo model\n        messages=[\n            {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n            {\"role\": \"user\", \"content\": user_input}\n        ],\n        max_tokens=150  # Controls the length of the response\n    )",
+        "detail": "test.chatgpt",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "test.chatgpt",
+        "description": "test.chatgpt",
+        "peekOfCode": "def main():\n    print(\"Welcome to the Simple Chatbot! Type 'quit' to exit.\")\n    while True:\n        user_input = input(\"You: \")\n        # Exit condition\n        if user_input.lower() == 'quit':\n            print(\"Goodbye!\")\n            break\n        # Get the response from the bot\n        bot_response = chat_with_bot(user_input)",
+        "detail": "test.chatgpt",
+        "documentation": {}
+    },
+    {
+        "label": "openai.api_key",
+        "kind": 5,
+        "importPath": "test.chatgpt",
+        "description": "test.chatgpt",
+        "peekOfCode": "openai.api_key = \"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\"  # Replace with your OpenAI API key\ndef chat_with_bot(user_input):\n    # Send a request to OpenAI's GPT model\n    response = openai.ChatCompletion.create(\n        model=\"gpt-3.5-turbo\",  # Use the gpt-3.5-turbo model\n        messages=[\n            {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n            {\"role\": \"user\", \"content\": user_input}\n        ],\n        max_tokens=150  # Controls the length of the response",
+        "detail": "test.chatgpt",
+        "documentation": {}
+    },
+    {
+        "label": "chat_with_gemini",
+        "kind": 2,
+        "importPath": "chatbot",
+        "description": "chatbot",
+        "peekOfCode": "def chat_with_gemini(prompt):\n    \"\"\"Sends a prompt to Gemini API and returns the response.\"\"\"\n    response = model.generate_content(prompt)\n    return response.text\nif __name__ == \"__main__\":\n    print(\"Welcome to the Google Gemini Chatbot! Type 'quit' to exit.\")\n    while True:\n        user_input = input(\"You: \")\n        if user_input.lower() in [\"quit\", \"exit\", \"bye\"]:\n            print(\"Chatbot: Goodbye!\")",
+        "detail": "chatbot",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "chatbot",
+        "description": "chatbot",
+        "peekOfCode": "API_KEY = \"AIzaSyCjcGLFJBkmKOSc3lb2LPZVI7506uODLWw\"\n# Configure the API\ngenai.configure(api_key=API_KEY)\nmodel = genai.GenerativeModel(\"gemini-pro\")\ndef chat_with_gemini(prompt):\n    \"\"\"Sends a prompt to Gemini API and returns the response.\"\"\"\n    response = model.generate_content(prompt)\n    return response.text\nif __name__ == \"__main__\":\n    print(\"Welcome to the Google Gemini Chatbot! Type 'quit' to exit.\")",
+        "detail": "chatbot",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "chatbot",
+        "description": "chatbot",
+        "peekOfCode": "model = genai.GenerativeModel(\"gemini-pro\")\ndef chat_with_gemini(prompt):\n    \"\"\"Sends a prompt to Gemini API and returns the response.\"\"\"\n    response = model.generate_content(prompt)\n    return response.text\nif __name__ == \"__main__\":\n    print(\"Welcome to the Google Gemini Chatbot! Type 'quit' to exit.\")\n    while True:\n        user_input = input(\"You: \")\n        if user_input.lower() in [\"quit\", \"exit\", \"bye\"]:",
+        "detail": "chatbot",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "init_data",
+        "description": "init_data",
+        "peekOfCode": "file_path = r\"C:\\Users\\sanke\\Downloads\\laptop_data.csv\"\ndata = pd.read_csv(file_path)\n# Connect to the MySQL database\nmydb = mysql.connector.connect(\n    host=\"127.0.0.1\",\n    user=\"root\",\n    password=\"\",\n    database=\"admin\"\n)\ncursor = mydb.cursor()",
+        "detail": "init_data",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "init_data",
+        "description": "init_data",
+        "peekOfCode": "data = pd.read_csv(file_path)\n# Connect to the MySQL database\nmydb = mysql.connector.connect(\n    host=\"127.0.0.1\",\n    user=\"root\",\n    password=\"\",\n    database=\"admin\"\n)\ncursor = mydb.cursor()\n# Create the table 'laptopdata'",
+        "detail": "init_data",
+        "documentation": {}
+    },
+    {
+        "label": "mydb",
+        "kind": 5,
+        "importPath": "init_data",
+        "description": "init_data",
+        "peekOfCode": "mydb = mysql.connector.connect(\n    host=\"127.0.0.1\",\n    user=\"root\",\n    password=\"\",\n    database=\"admin\"\n)\ncursor = mydb.cursor()\n# Create the table 'laptopdata'\ncreate_table_query = \"\"\"\nCREATE TABLE IF NOT EXISTS laptopdata (",
+        "detail": "init_data",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": "init_data",
+        "description": "init_data",
+        "peekOfCode": "cursor = mydb.cursor()\n# Create the table 'laptopdata'\ncreate_table_query = \"\"\"\nCREATE TABLE IF NOT EXISTS laptopdata (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    Company VARCHAR(255),\n    TypeName VARCHAR(255),\n    Inches FLOAT,\n    ScreenResolution VARCHAR(255),\n    Cpu VARCHAR(255),",
+        "detail": "init_data",
+        "documentation": {}
+    },
+    {
+        "label": "create_table_query",
+        "kind": 5,
+        "importPath": "init_data",
+        "description": "init_data",
+        "peekOfCode": "create_table_query = \"\"\"\nCREATE TABLE IF NOT EXISTS laptopdata (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    Company VARCHAR(255),\n    TypeName VARCHAR(255),\n    Inches FLOAT,\n    ScreenResolution VARCHAR(255),\n    Cpu VARCHAR(255),\n    Ram VARCHAR(50),\n    Memory VARCHAR(255),",
+        "detail": "init_data",
+        "documentation": {}
+    },
+    {
+        "label": "insert_query",
+        "kind": 5,
+        "importPath": "init_data",
+        "description": "init_data",
+        "peekOfCode": "insert_query = \"\"\"\nINSERT INTO laptopdata (Company, TypeName, Inches, ScreenResolution, Cpu, Ram, Memory, Gpu, OpSys, Weight, Price)\nVALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)\n\"\"\"\nfor _, row in data.iterrows():\n    cursor.execute(insert_query, (\n        row['Company'],\n        row['TypeName'],\n        row['Inches'],\n        row['ScreenResolution'],",
+        "detail": "init_data",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'laptop_price_project.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

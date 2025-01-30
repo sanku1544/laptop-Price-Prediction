@@ -1,0 +1,577 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Prediction</title>
+    <!-- Link to external CSS files -->
+   
+    <link rel="stylesheet" href="{%static 'css/style-starter.css'%}">
+    <link href="//fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        .subscribed-message {
+    font-weight: bold;
+    color: green;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+        /* Floating Chat Icon */
+.chat-icon {
+    z-index: 100;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Chatbot Container */
+.chatbot {
+    z-index: 100;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 500px;
+    font-family: Arial, sans-serif;
+    display: none;
+    background: #f8f9fa;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Chat Header */
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Chat Body */
+.chat-body {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Chat Messages Container */
+.chat-messages {
+    height: 395px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Message Style */
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+/* User Message (Right Side - Green like WhatsApp) */
+.user-message {
+    align-self: flex-end;
+    background: #dcf8c6;
+    color: black;
+    text-align: right;
+    border-top-right-radius: 0;
+}
+
+/* Bot Message (Left Side - White like WhatsApp) */
+.bot-message {
+    align-self: flex-start;
+    background: #fff;
+    color: black;
+    text-align: left;
+    border-top-left-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Typing Indicator (Bot is typing...) */
+.typing-indicator {
+    align-self: flex-start;
+    background: #f1f1f1;
+    color: gray;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    background: white;
+    /* border-top: 1px solid #ddd; */
+    padding: 5px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input button {
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.chat-input button:hover {
+    background: #0056b3;
+}
+
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            background-color: purple; /* Icon background color */
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* Tooltip Styling */
+        .profile-icon::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 45px;  /* Move tooltip below the icon */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+            font-size: 12px;
+        }
+
+        /* Tooltip on hover */
+        .profile-icon:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+        .playful-button {
+    position: relative;
+    padding: 10px 16px;
+    font-size: 17px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: linear-gradient(-45deg, #FF61D8, #6B5DFF, #2FEAA8, #4BFCE1);
+    background-size: 400% 400%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    animation: gradientBG 10s ease infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.playful-button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(-45deg, #FF61D8, #6B5DFF, #2FEAA8, #4BFCE1);
+    background-size: 400% 400%;
+    border-radius: 15px;
+    animation: gradientBG 10s ease infinite;
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.playful-button:hover {
+    transform: translateY(-4px) scale(1.08);
+    /* letter-spacing: 1px; */
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.playful-button:hover::before {
+    opacity: 0.8;
+}
+
+.playful-button:active {
+    transform: translateY(2px) scale(0.98);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Blob effect on hover */
+.blob {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.5s;
+    animation: blobMove 5s infinite;
+}
+
+@keyframes blobMove {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(10px, -10px) scale(1.2);
+    }
+    50% {
+        transform: translate(-5px, 5px) scale(0.8);
+    }
+    75% {
+        transform: translate(-10px, -5px) scale(1.1);
+    }
+}
+
+/* Click effect */
+.splash {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+    border-radius: 50%;
+    animation: splash 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes splash {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+       
+    </style>
+</head>
+<body>
+     <!-- header -->
+     <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                   Laptop Price Prediction
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'feedback' %}">Feedback</a>
+                        </li>
+                    </ul>
+                    {% if request.session.uid %}
+                </div>
+                 <!-- Profile Icon with Custom Tooltip -->
+                  <div class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                 <li class="nav-item">
+                    <a href="{% url 'accounts:logout' %}" class="nav-link">Log Out</a>
+                </li>
+            </div>
+    <a href="{% url 'accounts:profile' %}" class="menu-item">
+        <div class="profile-icon" data-tooltip="{{ request.session.uname }}">
+            <span>{{ request.session.uname|slice:":1" }}</span> <!-- First Character -->
+        </div>
+    </a>
+   
+    {% else %}
+        <a href="{% url 'accounts:signup' %}" class="playful-button">Sign Up</a>
+        <a href="{% url 'accounts:login' %}" class="playful-button">Log In</a>
+    {% endif %}
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox">
+        <div class="mode-container">
+            <i class="gg-sun"></i>
+            <i class="gg-moon"></i>
+        </div>
+    </label>
+</div>
+<div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+                
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+       <!-- Floating Chat Icon -->
+   <div id="chatIcon" class="chat-icon" onclick="toggleChat()">
+    🤖
+</div>
+
+<!-- Chatbot Container -->
+<div class="chatbot" id="chatbot">
+    <div class="chat-header">
+        <span>🤖 Chat with us</span>
+        <button class="close-btn" onclick="toggleChat()">✖</button>
+    </div>
+    <div class="chat-body">
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+    
+    {% block content %}
+    {% endblock %}
+    <!-- footer -->
+    <footer class="w3l-footer-29-main py-5">
+        <div class="container pt-lg-5 pt-sm-4 pt-2 pb-2">
+            <div class="row footer-top-29">
+                <div class="col-lg-4 col-md-6 footer-list-29">
+                    <h6 class="footer-title-29">Contact Info </h6>
+                    <p class="mb-2 pe-xl-5">Address : Near Jaihind College ,Wadibhokar Road ,Dhule
+                    </p>
+                    <p class="mb-2">Phone Number : <a href="tel:+1(21) 234 4567">8055405020</a></p>
+                    <p class="mb-2">Email : <a href="mailto:info@example.com">atulmali102@gmail.com.com</a></p>
+                    <div class="mt-4">
+                        <ul class="social">
+                            <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/sanketnikam15/"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="#twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#google"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                            <li><a href="https://github.com/sanku1544"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
+                    <ul>
+                        <h6 class="footer-title-29">Quick Links</h6>
+                        <li><a href="{% url 'about' %}">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#workwithus">Work with us</a></li>
+                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                        <li><a href="#rewards">Rewards</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 ps-lg-5 ps-lg-4 footer-list-29 mt-md-0 mt-4">
+                    <ul>
+                        <h6 class="footer-title-29">Explore</h6>
+                        <li><a href="#blog">Blog Posts</a></li>
+                        <li><a href="#privacy">Privacy policy</a></li>
+                        <li><a href="#partners">Our Partners</a></li>
+                        <li><a href="#license">License & uses</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 footer-list-29 mt-lg-0 mt-4 ps-lg-5">
+                    <h6 class="footer-title-29">Subscribe</h6>
+                
+                    {% if subscribed %}
+                        <p class="subscribed-message">You are a member</p>
+                    {% else %}
+                        <form action="{% url 'accounts:subscribe' %}" class="subscribe" method="post">
+                            {% csrf_token %}
+                            <input type="email" name="email" placeholder="Email Address" required="">
+                            <button class="btn btn-style mt-2">Subscribe</button>
+                        </form>
+                    {% endif %}
+                
+                    <p class="mt-3">Subscribe to our mailing list and get updates to your email inbox.</p>
+                </div>
+                
+                <!-- Success Message Popup -->
+                <div id="subscribe-popup" class="popup">
+                    <p>Thanks for subscribing!</p>
+                </div>
+                
+               
+                
+            </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        {% if show_popup %}
+            document.getElementById("subscribe-popup").style.display = "block";
+                setTimeout(() => {
+                            document.getElementById("subscribe-popup").style.display = "none";
+                        }, 3000);
+                    {% endif %}
+                });
+</script>
+
+<script>
+    function toggleChat() {
+    let chatbox = document.getElementById("chatbot");
+    let chatIcon = document.getElementById("chatIcon");
+
+    if (chatbox.style.display === "none" || chatbox.style.display === "") {
+        chatbox.style.display = "block";
+        chatIcon.style.display = "none";
+    } else {
+        chatbox.style.display = "none";
+        chatIcon.style.display = "block";
+    }
+}
+
+function sendMessage() {
+    let userInputField = document.getElementById("userInput");
+    let userInput = userInputField.value.trim();
+    let chatMessages = document.getElementById("chatMessages");
+
+    if (userInput === "") return;
+
+    // Add user message
+    let userMsg = document.createElement("div");
+    userMsg.classList.add("message", "user-message");
+    userMsg.innerHTML = `<span>${userInput}</span>`;
+    chatMessages.appendChild(userMsg);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    userInputField.value = "";
+
+    // Add Typing Indicator
+    let typingIndicator = document.createElement("div");
+    typingIndicator.id = "typingIndicator";
+    typingIndicator.classList.add("typing-indicator");
+    typingIndicator.innerHTML = `<span>Bot is typing...</span>`;
+    chatMessages.appendChild(typingIndicator);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    // Simulate bot response (Replace with actual API call)
+    setTimeout(() => {
+        fetch('/chat/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookie('csrftoken') // Django CSRF
+            },
+            body: JSON.stringify({ userInput })
+        })
+        .then(response => response.json())
+        .then(data => {
+            chatMessages.removeChild(typingIndicator); // Remove typing indicator
+
+            let botMsg = document.createElement("div");
+            botMsg.classList.add("message", "bot-message");
+            botMsg.innerHTML = `<span>${data.bot_reply || "Hello! How can I assist you?"}</span>`;
+            chatMessages.appendChild(botMsg);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        })
+        .catch(() => {
+            chatMessages.removeChild(typingIndicator); // Remove typing indicator
+
+            let botMsg = document.createElement("div");
+            botMsg.classList.add("message", "bot-message");
+            botMsg.innerHTML = `<span>Something went wrong. Please try again.</span>`;
+            chatMessages.appendChild(botMsg);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        });
+    }, 1500); // Simulate delay (1.5 seconds)
+}
+
+// Get CSRF token for Django
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== "") {
+        let cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+</script>
+         
+            <!-- copyright
+            <p class="copy-footer- -->
